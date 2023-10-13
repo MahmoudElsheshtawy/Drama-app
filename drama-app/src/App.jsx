@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect } from 'react'
 import {fetchDataFromApi} from './utils/api'
 import { useSelector, useDispatch } from "react-redux";
@@ -20,19 +21,24 @@ function App() {
 
  },[])
  const testingapi =()=>{
-  fetchDataFromApi("/movie/popular").then(
+  fetchDataFromApi("/configuration").then(
     (res)=>{
       console.log(res);
-      dispatch(getApiConfiguration(res))
+      const url = {
+        backdrop: res.images.secure_base_url + "original",
+        poster: res.images.secure_base_url + "original",
+        profile: res.images.secure_base_url + "original",
+    };
+      dispatch(getApiConfiguration(url))
     }
   )
  }
 
   return (
     <>
-          <h1>{url?.total_pages}</h1>
+          {/* <h1>{url?.total_pages}</h1> */}
           <BrowserRouter>
-            <Header />
+            <Header/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/:mediaType/:id" element={<Details />} />

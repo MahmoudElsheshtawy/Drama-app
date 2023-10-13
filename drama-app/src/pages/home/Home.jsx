@@ -1,8 +1,11 @@
 import './Home.css'
-
+import HeroBanner from './hearobanner/HeroBanner'
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+
+      <HeroBanner/>
+    </div>
   )
 }
 
