@@ -8,19 +8,19 @@ import UseFeching from "../../../hooks/UseFeching";
 
 import Img from "../../../components/lazyLoadeimg/Img";
 import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper";
-// import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
-
 const HeroBanner = () => {
     const [background, setBackground] = useState("");
     const [query, setQuery] = useState("");
     const navigate = useNavigate();
     const { url } = useSelector((state) => state.Home);
-    const { data, loading } = UseFeching("/movie/upcoming");
-
+    const { data, loading } = UseFeching("/movie/top_rated");
+      console.log(background)
+       
     useEffect(() => {
         const bg =
+
             url.backdrop +
-            data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
+            data?.results?.[Math.floor(Math.random() * 10)]?.backdrop_path;
         setBackground(bg);
     }, [data]);
 
