@@ -95,15 +95,6 @@ svg {
         transform: translateY(0);
     }
 }
-.stiky-header{
-    position: sticky;
-    top: 0px;
-    animation: stikyHeader .3s ease-in-out;
-}
-@keyframes stikyHeader{
-    0%{transform: translateY(-80px);}
-    100%{transform: translateY(0);}
-}
 
 
 

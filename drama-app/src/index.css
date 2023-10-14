@@ -22,8 +22,8 @@
 
 
 body {
-  /* background-color: var(--black); */
-  height: 4000px;
+  background-color: var(--black);
+  /* height: 4000px; */
 }
 
 ::-webkit-scrollbar {
