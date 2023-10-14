@@ -8,27 +8,25 @@ import {
 
 
 import './Footer.css'
-import ContentWrapper from "../ContentWrapper/ContentWrapper";
+// import ContentWrapper from "../ContentWrapper/ContentWrapper";
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <ContentWrapper className="fff">
-               <div className="info">
-               <ul className="menuItems-footer">
-                    <li className="menuItem">Terms Of Use</li>
-                    <li className="menuItem">Privacy-Policy</li>
-                    <li className="menuItem">About</li>
-                    <li className="menuItem">Blog</li>
-                    <li className="menuItem">FAQ</li>
-                </ul>
-               </div>
-                <div className="infoText">
+            {/* <ContentWrapper className="container"> */}
+               <div className="info-footer" style={{marginTop:'40px', color:'#fff',textAlign:'center'}}>
+                    <span className="info-f">Privacy-Policy</span>
+                    <span className="info-f">About</span>
+                    <span className="info-f">Blog</span>
+                    <span className="info-f">FAQ</span>
+                </div>
+              
+                <div className="infoText" style={{marginTop:'40px', color:'#aaa',textAlign:'center'}}>
                     sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                 </div>
-                <div className="socialIcons" >
+                <div className="socialIcons" style={{marginTop:'40px', color:'#fff',textAlign:'center'}}>
                     <span className="icon">
                         <FaFacebookF />
                     </span>
@@ -41,8 +39,8 @@ const Footer = () => {
                     <span className="icon">
                         <FaLinkedin />
                     </span>
-                </div>
-            </ContentWrapper>
+                </div> 
+            {/* </ContentWrapper> */}
         </footer>
     );
 };

@@ -38,7 +38,7 @@ img {
     align-items: center;
     display: flex; 
 }
-.menuItem {
+ .menuItem {
     height: 60px;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ svg {
     background: var(--black3);
 }
 
-.menuItems {
+.header .menuItems {
     display: flex;
     position: absolute;
     top: 60px;
@@ -140,7 +140,7 @@ svg {
     gap: 20px;      
     display: block;
 }
-.menuItems.active{
+ .menuItems.active{
     top: 56px;
 }
     

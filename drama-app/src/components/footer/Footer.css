@@ -1,79 +1,19 @@
 
+
+
 .footer{
     background-color: var(--black3);
     padding: 50px 0;
-    color: rgb(255, 255, 255);   
+    color: rgb(255, 255, 255);  
+  
+    
 }
-.footer .contentWrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-   
-}
-.footer .info {
-    list-style-type: none;
-    flex-wrap: wrap;
+.info-f{
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
  
 }
-.info .menuItems-footer{
-display: flex;
+.info-f:hover{
+  color: rgb(242, 207, 162);
 }
-
-.footer .menuItem {
-    transition: all ease 0.3s;
-    cursor: pointer;
-    font-size: 12px;
-}  
-.footer .infoText {
-    font-size: 12px;
-    line-height: 20px;
-    opacity: 0.5;
-    text-align: center;
-    max-width: 800px;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-.footer .socialIcons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-
-
-.footer .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all ease 0.3s;
-}
-
-@media screen and (max-width:600px) {
-  
-  .info{
-
-  }
-
-
-
-
-
-
-
-
-    }
-
-            /* &:hover {
-                box-shadow: 0 0 0.625em var(--pink);
-                color: var(--pink);
-            } */
