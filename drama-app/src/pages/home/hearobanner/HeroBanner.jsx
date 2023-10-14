@@ -13,14 +13,14 @@ const HeroBanner = () => {
     const [query, setQuery] = useState("");
     const navigate = useNavigate();
     const { url } = useSelector((state) => state.Home);
-    const { data, loading } = UseFeching("/movie/top_rated");
+    const { data, loading } = UseFeching("/movie/upcoming");
       console.log(background)
        
     useEffect(() => {
         const bg =
 
             url.backdrop +
-            data?.results?.[Math.floor(Math.random() * 10)]?.backdrop_path;
+            data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
         setBackground(bg);
     }, [data]);
 
