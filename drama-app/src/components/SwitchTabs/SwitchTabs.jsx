@@ -1,10 +1,37 @@
+ /* eslint-disable react/prop-types */
+ /* eslint-disable no-unused-vars */
+import './SwitchTabs.css'
+import React, { useState } from "react";
+const SwitchTabs = ({ data, onTabChange }) => {
+    const [selectedTab, setSelectedTab] = useState(0);
+    const [left, setLeft] = useState(0);
 
+    const activeTab = (tab, index) => {
+        setLeft(index * 100);
+        setTimeout(() => {
+            setSelectedTab(index);
+        }, 300);
+        onTabChange(tab, index);
+    };
 
-const SwitchTabs = ({data ,onTabChange}) => {
-    
-  return (
-    <div>SwitchTabs</div>
-  )
-}
+    return (
+        <div className="switchingTabs">
+            <div className="tabItems">
+                {data.map((tab, index) => (
+                    <span
+                        key={index}
+                        className={`tabItem ${
+                            selectedTab === index ? "active" : ""
+                        }`}
+                        onClick={() => activeTab(tab, index)}
+                    >
+                        {tab}
+                    </span>
+                ))}
+                <span className="movingBg" style={{ left }} />
+            </div>
+        </div>
+    );
+};
 
-export default SwitchTabs
+export default SwitchTabs;
