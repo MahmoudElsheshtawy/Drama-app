@@ -9,7 +9,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 // import dayjs from "dayjs";
-
+import './Carousel.css'
 import ContentWrapper from "../ContentWrapper/ContentWrapper";
 import Img from "../lazyLoadeimg/Img";
 // import PosterFallback from "../../assets/no-poster.png";
@@ -20,9 +20,19 @@ const Carousel = ({data,loading}) => {
   const { url } = useSelector((state) => state.Home);
     const navigate = useNavigate();
 
-const navigation=()=>{
+    const navigation = (dir) => {
+      const container = carouselContainer.current;
 
-}
+      const scrollAmount =
+          dir === "left"
+              ? container.scrollLeft - (container.offsetWidth + 20)
+              : container.scrollLeft + (container.offsetWidth + 20);
+
+      container.scrollTo({
+          left: scrollAmount,
+          behavior: "smooth",
+      });
+  };
   return (
     <div className="carousel">
       
