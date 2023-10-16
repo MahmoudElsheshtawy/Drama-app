@@ -29,7 +29,24 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-
+.circleRating{
+  width: 40px;
+    position: relative;
+    top: 4px;
+    right: 223px;
+    flex-shrink: 0;
+    background-color: aliceblue;
+    object-fit: cover;
+}
+.CircularProgressbar {
+  /* font-size: 20px; */
+  flex-shrink: 0;
+  margin-left: 0px;
+  cursor: pointer;
+}
+.CircularProgressbar .CircularProgressbar-text{
+  font-size: 30px;
+}
 /* .skeleton {
   position: relative;
   overflow: hidden;

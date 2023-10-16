@@ -8,12 +8,12 @@ import {
 } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-// import dayjs from "dayjs";
+import dayjs from "dayjs";
 import './Carousel.css'
 import ContentWrapper from "../ContentWrapper/ContentWrapper";
 import Img from "../lazyLoadeimg/Img";
+import CircleRating from "../CircleRating/CircleRating";
 // import PosterFallback from "../../assets/no-poster.png";
-// import CircleRating from "../circleRating/CircleRating";
 // import Genres from "../genres/Genres";
 const Carousel = ({data,loading}) => {
   const carouselContainer = useRef();
@@ -33,6 +33,17 @@ const Carousel = ({data,loading}) => {
           behavior: "smooth",
       });
   };
+  const skItem = () => {
+    return (
+        <div className="skeletonItem">
+            <div className="posterBlock skeleton"></div>
+            <div className="textBlock">
+                <div className="title skeleton"></div>
+                <div className="date skeleton"></div>
+            </div>
+        </div>
+    );
+};
   return (
     <div className="carousel">
       
@@ -56,14 +67,30 @@ const Carousel = ({data,loading}) => {
                    <div className="carouseItem" key={item.id}>
                                     <div className="posterBlock">
                                         <Img src={posterUrl} className='img-poster' />
+                                        <CircleRating       
+                                         rating={item.vote_average.toFixed(
+                                                1)}/>
                                        </div>
+                                       <span className="textBlock">{item.title || item.name}</span>
+                                       <span className="date-m"> {dayjs(item.release_date || item.first_air_date).format(
+                                                "MMM D, YYYY"
+                                            )}</span>
                    </div>
                   )
                  })}
 
 
                 </div>)
-                :(<span>Loading...</span>)}
+                :( 
+                
+                <div className="loadingSkeleton">
+                    {skItem()}
+                    {skItem()}
+                    {skItem()}
+                    {skItem()}
+                    {skItem()}
+            </div>
+            )}
       </ContentWrapper>
     </div>
   )
