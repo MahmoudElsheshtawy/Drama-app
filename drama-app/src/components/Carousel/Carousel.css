@@ -74,7 +74,7 @@ cursor: pointer;
     width: 100%;
     background-size: cover;
     background-position: center;
-    /* margin-bottom: 30px; */
+  
     display: flex;
     align-items: flex-end;
     justify-content: space-between;

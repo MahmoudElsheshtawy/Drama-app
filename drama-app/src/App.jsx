@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-          {/* <h1>{url?.total_pages}</h1> */}
+         
           <BrowserRouter>
             <Header/>
             <Routes>
