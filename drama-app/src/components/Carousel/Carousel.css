@@ -12,14 +12,15 @@
         font-weight: normal;
     }
     .arrow {
+        background-color: aqua;
         font-size: 30px;
-        color: rgb(0, 0, 0);
+        color: rgb(80, 78, 78);
         position: absolute;
         top: 44%;
         transform: translateY(-50%);
         cursor: pointer;
         /* opacity: ; */
-        z-index: 1;
+        z-index: 100000;
     }
         /* @include md {
             display: block;
@@ -94,7 +95,7 @@
         margin-right: -20px;
         margin-left: -20px;
         padding: 0 20px;
-        /* background-color: #000; */
+        background-color: #000;
     }
         .carouselItem {
             width: 15px;
@@ -111,7 +112,7 @@
                 justify-content: space-between;
                 padding: 10px;
               
-                /* background-color: rgb(255, 98, 6); */
+                background-color: rgb(16, 15, 15);
             }
                 /* .lazy-load-image-background{ */
                     /* position: absolute; */
@@ -171,19 +172,11 @@
                     top: 30px;
                     background-color: white;
                     flex-shrink: 0;
-                    /* @include md {
-                        width: 50px;
-                        height: 50px;
-                    } */
                 }
                 .genres {
                     display: none;
                     position: relative;
-                    /* @include md {
-                        display: flex;
-                        flex-flow: wrap;
-                        justify-content: flex-end;
-                    } */
+                 
                 }
             
             .textBlock {
@@ -209,22 +202,3 @@
                 
 
                 }
-  /* @media screen and (max-width:660px) {
-    
-    .carouselItem {
-        width: calc(25% - 15px); */
-        /* flex-shrink: 0; */
-/*        
-     } 
-     
-
-     .title{
-        font-size: 20px;
-    }
-    .carouseItem{
-        gap: 20px;
-        overflow: hidden;
-        margin: 0;
-        padding: 0; 
-    }
- }  */

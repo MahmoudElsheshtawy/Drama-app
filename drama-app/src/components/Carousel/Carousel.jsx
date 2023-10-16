@@ -48,7 +48,7 @@ const Carousel = ({data,loading}) => {
     <div className="carousel">
       
       <ContentWrapper>
-      <BsFillArrowLeftCircleFill
+                <BsFillArrowLeftCircleFill
                     className="carouselLeftNav arrow"
                     onClick={() => navigation("left")}
                 />
@@ -56,8 +56,10 @@ const Carousel = ({data,loading}) => {
                     className="carouselRighttNav arrow"
                     onClick={() => navigation("right")}
                 />
+
                 {!loading ?
-                (<div className="carouselItems">
+                (<div className="carouselItems" ref={carouselContainer}>
+ 
                  {data?.map((item)=>{
 
                   const posterUrl = item.poster_path
@@ -69,7 +71,7 @@ const Carousel = ({data,loading}) => {
                                         <Img src={posterUrl} className='img-poster' />
                                         <CircleRating       
                                          rating={item.vote_average.toFixed(
-                                                1)}/>
+                                              1)}/>
                                        </div>
                                        <span className="textBlock">{item.title || item.name}</span>
                                        <span className="date-m"> {dayjs(item.release_date || item.first_air_date).format(
@@ -92,6 +94,7 @@ const Carousel = ({data,loading}) => {
             </div>
             )}
       </ContentWrapper>
+     
     </div>
   )
 }

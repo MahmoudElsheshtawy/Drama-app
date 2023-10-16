@@ -47,11 +47,12 @@ body {
 .CircularProgressbar .CircularProgressbar-text{
   font-size: 30px;
 }
-/* .skeleton {
+ .skeleton {
   position: relative;
   overflow: hidden;
   background-color: #0a2955;
-  &::after {
+ }
+ .skeleton::after {
       position: absolute;
       top: 0;
       right: 0;
@@ -67,11 +68,10 @@ body {
       );
       animation: shimmer 2s infinite;
       content: "";
-  } */
+  } 
 
-  /* @keyframes shimmer {
+  @keyframes shimmer {
       100% {
           transform: translateX(100%);
       }
   }
-} */
