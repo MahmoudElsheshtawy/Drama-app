@@ -16,6 +16,7 @@ const TopRated   = () => {
         setEndpoint(tab === "Top" ? "movie" : "tv");
     };
 
+    
     return (
         <div className="carouselSection">
             <ContentWrapper>
