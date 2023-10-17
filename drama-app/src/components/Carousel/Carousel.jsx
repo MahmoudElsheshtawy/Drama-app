@@ -13,7 +13,7 @@ import './Carousel.css'
 import ContentWrapper from "../ContentWrapper/ContentWrapper";
 import Img from "../lazyLoadeimg/Img";
 import CircleRating from "../CircleRating/CircleRating";
-// import PosterFallback from "../../assets/no-poster.png";
+import PosterFallback from "../../assets/no-poster.png";
 // import Genres from "../genres/Genres";
 const Carousel = ({data,loading,endpoint}) => {
   const carouselContainer = useRef();

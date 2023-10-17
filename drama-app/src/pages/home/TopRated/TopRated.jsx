@@ -13,7 +13,7 @@ const TopRated   = () => {
     const { data, loading } = UseFeching(`/${endpoint}/top_rated`);
 
     const onTabChange = (tab) => {
-        setEndpoint(tab === "Top" ? "movie" : "tv");
+        setEndpoint(tab === "Movies" ? "movie" : "tv");
     };
 
     
@@ -21,7 +21,7 @@ const TopRated   = () => {
         <div className="carouselSection">
             <ContentWrapper>
                 <span className="carouselTitle">Top Rated</span>
-                <SwitchTabs data={["Top", "Series "]} onTabChange={onTabChange} />
+                <SwitchTabs data={["Movies", "Series "]} onTabChange={onTabChange} />
                 
             </ContentWrapper>
             <Carousel data={data?.results} loading={loading} endpoint={endpoint} />
