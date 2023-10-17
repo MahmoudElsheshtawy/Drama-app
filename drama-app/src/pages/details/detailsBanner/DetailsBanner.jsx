@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
@@ -12,11 +13,12 @@ import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadeimg/Img";
 import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "../PlayIcon";
+import VideoPopup from "../../../components/videoPopup/VideoPopup";
 // import VideoPopup from "../../../components/videoPopup/VideoPopup";
 
-const DetailsBanner = () => {
-    // const [show, setShow] = useState(false);
-    // const [videoId, setVideoId] = useState(null);
+const DetailsBanner = ({ video, crew }) => {
+    const [show, setShow] = useState(false);
+    const [videoId, setVideoId] = useState(null);
 
     const { mediaType, id } = useParams();
     const { data, loading } = UseFeching(`/${mediaType}/${id}`);
@@ -25,10 +27,10 @@ const DetailsBanner = () => {
 
     // const _genres = data?.genres?.map((g) => g.id);
 
-    // const director = crew?.filter((f) => f.job === "Director");
-    // const writer = crew?.filter(
-        // (f) => f.job === "Screenplay" || f.job === "Story" || f.job === "Writer"
-    // );
+    const director = crew?.filter((f) => f.job === "Director");
+    const writer = crew?.filter(
+        (f) => f.job === "Screenplay" || f.job === "Story" || f.job === "Writer"
+    );
 
     const toHoursAndMinutes = (totalMinutes) => {
         const hours = Math.floor(totalMinutes / 60);
@@ -86,10 +88,10 @@ const DetailsBanner = () => {
                                             />
                                             <div
                                                 className="playbtn"
-                                                // onClick={() => {
-                                                //     setShow(true);
-                                                //     setVideoId(video.key);
-                                                // }}
+                                                onClick={() => {
+                                                    setShow(true);
+                                                    setVideoId(video.key);
+                                                }}
                                             >
                                                 <PlayIcon />
                                                 <span className="text-btn">
@@ -144,7 +146,7 @@ const DetailsBanner = () => {
                                             )}
                                         </div>
 
-                                        {/* {director?.length > 0 && (
+                                        {director?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Director:{" "}
@@ -160,9 +162,9 @@ const DetailsBanner = () => {
                                                     ))}
                                                 </span>
                                             </div>
-                                        )} */}
+                                        )}
 
-                                        {/* {writer?.length > 0 && (
+                                         {writer?.length > 0 && (
                                             <div className="info">
                                                 <span className="text bold">
                                                     Writer:{" "}
@@ -178,7 +180,7 @@ const DetailsBanner = () => {
                                                     ))}
                                                 </span>
                                             </div>
-                                        )} */}
+                                        )} 
 
                                         {data?.created_by?.length > 0 && (
                                             <div className="info">
@@ -203,12 +205,12 @@ const DetailsBanner = () => {
                                         )}
                                     </div>
                                 </div>
-                                {/* <VideoPopup
+                                 <VideoPopup
                                     show={show}
                                     setShow={setShow}
                                     videoId={videoId}
                                     setVideoId={setVideoId}
-                                /> */}
+                                /> 
                             </ContentWrapper>
                         </React.Fragment>
                     )}
