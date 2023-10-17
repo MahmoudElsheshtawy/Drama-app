@@ -10,7 +10,7 @@ const VideoPopup = ({ show, setShow, videoId, setVideoId }) => {
         setVideoId(null);
     };
     return (
-        <div className={`videoPopup ${show ? "visible" : ""}`}>
+        <div className={`videoPopup ${show ? "visible" : ""}`} >
             <div className="opacityLayer" onClick={hidePopup}></div>
             <div className="videoPlayer">
                 <span className="closeBtn" onClick={()=>hidePopup()}>
