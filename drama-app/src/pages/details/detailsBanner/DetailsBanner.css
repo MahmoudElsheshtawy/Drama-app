@@ -4,6 +4,7 @@
     background-color: var(--black);
     padding-top: 100px;
     margin-bottom: 50px;
+   
 }
 /* @include md {
 margin-bottom: 0;
@@ -47,8 +48,9 @@ min-height: 700px;
 .content {
     display: flex;
     position: relative;
-    /* flex-direction: column; */
-
+    /* flex-flow: row wrap; */
+    /* flex-direction: row; */
+   /* flex-wrap: wrap; */
     gap: 25px;
 }
         /* @include md {
@@ -59,7 +61,7 @@ min-height: 700px;
     flex-shrink: 0;
 }
     .posterImg {
-        width: 10%;
+       
         display: block;
         border-radius: 12px;
     }
@@ -68,7 +70,7 @@ min-height: 700px;
                 } */
       
         .right {
-            color: white;
+            color: rgb(255, 255, 255);
         }
             .title {
                 font-size: 28px;
@@ -108,7 +110,7 @@ min-height: 700px;
                         padding-right: 100px;
                     } */
          
-            .circleRating {
+                    .detailsBanner .circleRating {
                 max-width: 70px;
                 background-color: var(--black2);
             }
@@ -119,7 +121,7 @@ min-height: 700px;
                     fill: white;
                 }
           
-            .playbtn {
+               .playbtn {
                 display: flex;
                 align-items: center;
                 gap: 20px;
@@ -131,7 +133,7 @@ min-height: 700px;
                     } */
                 }
                 .text {
-                    font-size: 20px;
+                    font-size: 15px;
                     transition: all 0.7s ease-in-out;
                 }
                 .triangle {
@@ -142,28 +144,34 @@ min-height: 700px;
                     transition: all 0.7s ease-in-out;
                 }
                 .circle {
+                    background-color: rgb(0, 123, 230);
                     stroke: white;
                     stroke-dasharray: 650;
                     stroke-dashoffset: 1300;
                     transition: all 0.5s ease-in-out;
                 }
-                &:hover {
-                    .text {
+               
+                .playbtn:hover{
+                    .text{
                         color: var(--pink);
+                        background-color: antiquewhite;
                     }
                     .triangle {
                         stroke-dashoffset: 0;
                         opacity: 1;
-                        stroke: var(--pink);
                         animation: trailorPlay 0.7s ease-in-out;
+                        background-color: rgb(247, 151, 26);
+
                     }
                     .circle {
                         stroke-dashoffset: 0;
-                        stroke: var(--pink);
+                        background-color: rgb(87, 51, 4);
+
                     }
-                }
+                } 
             
             .row {
+                /* background-color: aliceblue; */
                 display: flex;
                 align-items: center;
                 gap: 25px;
@@ -171,6 +179,7 @@ min-height: 700px;
             }
 
             .info {
+                background-color: aqua;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
                 padding: 15px 0;
                 display: flex;
@@ -180,11 +189,15 @@ min-height: 700px;
                     display: flex;
                     flex-flow: row wrap;
                 }
-                .text {
+                .text-btn{
                     margin-right: 10px;
                     opacity: 0.5;
                     line-height: 24px;
+                    /* position: relative; */
+                    /* top: -38px; */
+                    /* right: -30px; */
                 }
+               
                     /* &.bold {
                         font-weight: 600;
                         opacity: 1;
@@ -242,4 +255,8 @@ min-height: 700px;
                     width: 50%;
                     margin-bottom: 50px;
                 } */
-          
+.svgg{
+    width: 41px;
+
+
+}

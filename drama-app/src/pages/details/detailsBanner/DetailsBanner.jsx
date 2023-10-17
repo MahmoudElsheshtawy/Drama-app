@@ -11,7 +11,7 @@ import UseFeching from "../../../hooks/UseFeching";
 import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadeimg/Img";
 import PosterFallback from "../../../assets/no-poster.png";
-// import { PlayIcon } from "../Playbtn";
+import { PlayIcon } from "../PlayIcon";
 // import VideoPopup from "../../../components/videoPopup/VideoPopup";
 
 const DetailsBanner = () => {
@@ -85,14 +85,14 @@ const DetailsBanner = () => {
                                                 )}
                                             />
                                             <div
-                                                // className="playbtn"
+                                                className="playbtn"
                                                 // onClick={() => {
                                                 //     setShow(true);
                                                 //     setVideoId(video.key);
                                                 // }}
                                             >
-                                                {/* <PlayIcon /> */}
-                                                <span className="text">
+                                                <PlayIcon />
+                                                <span className="text-btn">
                                                     Watch Trailer
                                                 </span>
                                             </div>

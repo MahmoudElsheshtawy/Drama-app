@@ -75,3 +75,12 @@ body {
           transform: translateX(100%);
       }
   }
+  .detailsBanner .circleRating{
+    width: 40px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    flex-shrink: 0;
+    background-color: aliceblue;
+    object-fit: cover;
+  } 
