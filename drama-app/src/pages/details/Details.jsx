@@ -11,7 +11,7 @@ const Details = () => {
     <div>
 
       <DetailsBanner video={data?.results?.[0]} crew={credits?.crew}/>
-      <Cast/>
+      <Cast data={credits?.cast} loading={creditsLoading}/>
     </div>
   )
 }
