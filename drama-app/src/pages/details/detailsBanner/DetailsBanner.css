@@ -255,7 +255,7 @@ min-height: 700px;
         position: relative;
         flex-direction: column;
         gap: 25px;
-        /* background-color: aquamarine; */
+        background-color: aquamarine;
     }
   
 }
