@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-import Carousel from "../../../components/carousel/Carousel";
-import UseFeching from "../../../hooks/UseFeching";
-
+import Carousel from "../../../components/Carousel/Carousel";
+import UseFeching from '../../../hooks/UseFeching'
 const Similar = ({ mediaType, id }) => {
 
     const { data, loading, error } = UseFeching(`/${mediaType}/${id}/similar`);
