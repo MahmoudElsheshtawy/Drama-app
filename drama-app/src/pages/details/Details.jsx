@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './Details.css'
 import DetailsBanner from './detailsBanner/DetailsBanner'
 import UseFeching from '../../hooks/UseFeching';
