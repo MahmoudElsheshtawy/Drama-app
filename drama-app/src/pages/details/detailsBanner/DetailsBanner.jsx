@@ -19,14 +19,9 @@ import VideoPopup from "../../../components/videoPopup/VideoPopup";
 const DetailsBanner = ({ video, crew }) => {
     const [show, setShow] = useState(false);
     const [videoId, setVideoId] = useState(null);
-
     const { mediaType, id } = useParams();
     const { data, loading } = UseFeching(`/${mediaType}/${id}`);
-
-    const { url } = useSelector((state) => state.Home);
-
-    // const _genres = data?.genres?.map((g) => g.id);
-
+    const { url } = useSelector((state) => state.Home)
     const director = crew?.filter((f) => f.job === "Director");
     const writer = crew?.filter(
         (f) => f.job === "Screenplay" || f.job === "Story" || f.job === "Writer"

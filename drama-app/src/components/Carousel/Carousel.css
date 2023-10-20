@@ -10,50 +10,40 @@
     color: white;
     margin-bottom: 20px;
     font-weight: normal;
+    /* position: absolute; */
 }
 .arrow {
-    background-color: aqua;
+    /* background-color: aqua; */
     font-size: 30px;
-    color: rgb(80, 78, 78);
+    color: rgb(166, 165, 165);
     position: absolute;
     top: 44%;
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 100000;
 }
-
 .carouselLeftNav {
     left: 30px;
 }
 .carouselRighttNav {
     right: 30px;
 }
-
-  
-
-
 .posterBlock {
     border-radius: 12px;
     width: 100%;
-    
-
     display: flex;
-
     flex-direction: row;
 }
-.textBlock {
+.title {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
     
 }
-    .title {
-        /* width: 100%; */
-        /* height: 20px; */
-        /* margin-bottom: 10px; */
-        
-    }
-    .date {
-        /* width: 75%; */
-        /* height: 20px; */
-    }
+.date {
+    width: 75%;
+    height: 20px;
+} 
    
  .carouselItems  {
         display: flex;
@@ -63,7 +53,7 @@
         margin-right: -20px;
         margin-left: -20px;
         padding: 0 20px;
-        background-color: #000;
+        /* background-color: #000; */
     }
 .carouselItem {
 width: 15px;
@@ -74,13 +64,11 @@ cursor: pointer;
     width: 100%;
     background-size: cover;
     background-position: center;
-  
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding: 10px;
-    
-    background-color: rgb(16, 15, 15);
+    /* background-color: rgb(16, 15, 15); */
 }
 
 .img-poster {
@@ -91,37 +79,29 @@ cursor: pointer;
     background-position: center;
     border-radius: 10px;
     margin-top: 20px;
-    
 }
-
-        .circleRating {
-            width: 40px;
-            height: 40px;
-            position: relative;
-            top: 30px;
-            background-color: white;
-            flex-shrink: 0;
-        }
-        .genres {
-            display: none;
-            position: relative;
-            
-        }
-    
-    .textBlock {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        margin-left: 12px;
-        margin-bottom: 10px;
-    }
-
-        
-        .date-m {
-            font-size: 14px;
-            opacity: 0.5;
-            color: aliceblue;
-            margin: 12px;
-        
-
-        }
+.circleRating {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    flex-shrink: 0;
+}
+.genres {
+    display: none;
+    position: relative; 
+}
+.textBlock {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+.date-m {
+    font-size: 14px;
+    opacity: 0.5;
+    color: aliceblue;
+    margin: 12px;
+}
