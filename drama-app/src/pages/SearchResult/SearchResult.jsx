@@ -14,7 +14,10 @@ const SearchResult = () => {
   const [loading, setLoading] = useState(false);
   const { query } = useParams();
   return (
-    <div>SearchResult</div> 
+    <div>
+      
+      
+    </div> 
   )
 }
 
