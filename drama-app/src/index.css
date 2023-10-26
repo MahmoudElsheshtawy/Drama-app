@@ -84,3 +84,8 @@ body {
     background-color: aliceblue;
     object-fit: cover;
   } 
+  /* .infinite-scroll-component content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(23rem, 1fr));
+    gap: 1.5rem;
+  } */
