@@ -1,3 +1,4 @@
+/* eslint-disable no-unsafe-optional-chaining */
 import './SearchResult.css'
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -47,10 +48,11 @@ useEffect(()=>{
     <div className="searchResultsPage">
     {loading && <Spinner initial={true} />}
     {!loading && (
-        <ContentWrapper >
+        <ContentWrapper>
             {data?.results?.length > 0 ? (
                 <>
-                    <div className="pageTitle">
+                  <div className="contanier">
+                  <div className="pageTitle">
                         {`Search ${
                             data?.total_results > 1
                                 ? "results"
@@ -64,8 +66,8 @@ useEffect(()=>{
                         hasMore={pageNum <= data?.total_pages}
                         loader={<Spinner />}
                     >
-                         {data?.results.map((item, index) => { 
-                             if (item.media_type === "person") return;
+                        {data?.results.map((item, index) => {
+                            if (item.media_type === "person") return;
                             return (
                                 <MovieCard
                                     key={index}
@@ -75,6 +77,7 @@ useEffect(()=>{
                             );
                         })}
                     </InfiniteScroll>
+                  </div>
                 </>
             ) : (
                 <span className="resultNotFound">

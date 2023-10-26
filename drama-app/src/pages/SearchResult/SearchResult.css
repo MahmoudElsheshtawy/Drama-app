@@ -1,12 +1,16 @@
 .searchResultsPage {
     /* min-height: 700px; */
     /* padding-top: 100px; */
-    background-color: rgb(225, 145, 39);
-    display: flex;
-    flex-direction: column;
+    /* background-color: rgb(225, 145, 39); */
+    /* display: flex; */
+    /* flex-direction: column; */
     /* display: grid;
     grid-template-columns: repeat(auto-fit ,minmax(23rem, 1fr));
     gap: 1.5rem; */
+}
+.contanier{
+   margin-top: 70px;
+   /* background-color: brown; */
 }
 
     .resultNotFound {
@@ -30,6 +34,7 @@
         } */
         .movieCard .posterBlock {
                 margin-bottom: 20px;
+                /* background-color: blue; */
             }
         /* }
     }
