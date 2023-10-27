@@ -29,7 +29,7 @@ const HeroBanner = () => {
             navigate(`/search/${query}`);
         }
     };
-const handleClick =(e)=>{
+const handleClick =()=>{
  
     navigate(`/search/${query}`)
 
@@ -51,12 +51,18 @@ const handleClick =(e)=>{
                         Explore now.
                     </span>
                     <div className="searchInput">
-                        <input
-                            type="text"
-                            placeholder="Search for a movie or tv show...."
+                            <div className="inputbox">
+                            
+                            <input
                             onChange={(e) => setQuery(e.target.value)}
                             onKeyUp={searchQueryHandler}
-                        />
+                            placeholder="Search for a movie or tv show...."
+                            required="required" type="text"/>
+                          
+                            <i></i>
+                           
+                            </div>
+                    
                         <button onClick={handleClick} >Search</button>
                     </div>
                 </div>
