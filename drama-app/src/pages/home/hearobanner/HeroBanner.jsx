@@ -14,7 +14,7 @@ const HeroBanner = () => {
     const navigate = useNavigate();
     const { url } = useSelector((state) => state.Home);
     const { data, loading } = UseFeching("/movie/upcoming");
-      console.log(background)
+    //   console.log(background)
        
     useEffect(() => {
         const bg =
@@ -29,7 +29,11 @@ const HeroBanner = () => {
             navigate(`/search/${query}`);
         }
     };
+const handleClick =(e)=>{
+ 
+    navigate(`/search/${query}`)
 
+}
     return (
         <div className="heroBanner">
             {!loading && (
@@ -53,7 +57,7 @@ const HeroBanner = () => {
                             onChange={(e) => setQuery(e.target.value)}
                             onKeyUp={searchQueryHandler}
                         />
-                        <button onClick={(e)=>setQuery(e.target.value)}>Search</button>
+                        <button onClick={handleClick} >Search</button>
                     </div>
                 </div>
             </ContentWrapper>
