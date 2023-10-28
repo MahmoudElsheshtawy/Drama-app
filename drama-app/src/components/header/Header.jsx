@@ -75,7 +75,7 @@ const Header = () => {
                 <div className="logo" onClick={() => navigate("/")}>
                     <img src={logo} alt="" />
                 </div>
-                <ul className={mobileMenu ? "menuItems active":"menuItems"}>
+                <ul className={mobileMenu ? "menuItems active":"menuItems"} >
                     <li
                         className="menuItem"
                         onClick={() => navigationHandler("movie")}

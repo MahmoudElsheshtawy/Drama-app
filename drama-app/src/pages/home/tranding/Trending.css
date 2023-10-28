@@ -1,7 +1,18 @@
 .carouselTitle{
-    font-size: 20px;
-     margin: 10px;
+    font-size: 25px;
+    /* background-color: blue; */
+   
 }
-.container{
-    margin-right: 20px;
+
+@media screen and (max-width:600px) {
+    .carouselTitle{
+        font-size: 20px;
+         margin: 10px;
+         
+    }
+    .container{
+        /* margin-right: 20px; */
+    }
+ 
+
 }

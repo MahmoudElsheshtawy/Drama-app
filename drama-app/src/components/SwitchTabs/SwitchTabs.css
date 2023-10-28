@@ -2,12 +2,12 @@
     height: 30px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    padding: 2px;
-    margin-right: 60px;
+    /* padding: 2px; */
+    margin-right: 70px;
 
 }
 .container{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,31 @@
             transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
         }
 @media screen and (max-width:600px) {
-
+    .movingBg {
+        height: 30px;
+     
+        width: 89px;
+        border-radius: 15px;
+        background-image: var(--gradient);
+        position: absolute;
+        left: 0;
+        transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
+    }
+    .tabItem {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 95px;
+        color: var(--black);
+        /* background-color: aqua; */
+        font-size: 14px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        transition: color ease 0.3s;
+    }
  
 
         }

@@ -6,15 +6,15 @@ import dayjs from "dayjs";
 
 import "./DetailsBanner.css";
 
-import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
+import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper";
 import UseFeching from "../../../hooks/UseFeching";
-// import Genres from "../../../components/genres/Genres";
-import CircleRating from "../../../components/circleRating/CircleRating";
+
+import CircleRating from "../../../components/CircleRating/CircleRating";
 import Img from "../../../components/lazyLoadeimg/Img";
 import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "../PlayIcon";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
-// import VideoPopup from "../../../components/videoPopup/VideoPopup";
+
 
 const DetailsBanner = ({ video, crew }) => {
     const [show, setShow] = useState(false);
@@ -44,7 +44,8 @@ const DetailsBanner = ({ video, crew }) => {
                             </div>
                             <div className="opacity-layer"></div>
                             <ContentWrapper>
-                                <div className="content">
+                               
+                                <div className="contenttt">
                                     <div className="left">
                                         {data.poster_path ? (
                                             <Img
@@ -73,7 +74,7 @@ const DetailsBanner = ({ video, crew }) => {
                                             {data.tagline}
                                         </div>
 
-                                        {/* <Genres data={_genres} /> */}
+                                       
 
                                         <div className="row">
                                             <CircleRating
@@ -206,6 +207,7 @@ const DetailsBanner = ({ video, crew }) => {
                                     videoId={videoId}
                                     setVideoId={setVideoId}
                                 /> 
+                              
                             </ContentWrapper>
                         </React.Fragment>
                     )}

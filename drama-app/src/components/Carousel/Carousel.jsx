@@ -2,10 +2,7 @@
 /* eslint-disable react/prop-types */
 
 import { useRef } from "react";
-import {
-    BsFillArrowLeftCircleFill,
-    BsFillArrowRightCircleFill,
-} from "react-icons/bs";
+import { BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill,} from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
@@ -14,7 +11,6 @@ import ContentWrapper from "../ContentWrapper/ContentWrapper";
 import Img from "../lazyLoadeimg/Img";
 import CircleRating from "../CircleRating/CircleRating";
 import PosterFallback from "../../assets/no-poster.png";
-// import Genres from "../genres/Genres";
 const Carousel = ({data,loading,endpoint,title }) => {
   const carouselContainer = useRef();
   const { url } = useSelector((state) => state.Home);
@@ -25,8 +21,8 @@ const Carousel = ({data,loading,endpoint,title }) => {
 
       const scrollAmount =
           dir === "left"
-              ? container.scrollLeft - (container.offsetWidth + 10)
-              : container.scrollLeft + (container.offsetWidth + 10);
+              ? container.scrollLeft - (container.offsetWidth + 20)
+              : container.scrollLeft + (container.offsetWidth + 20);
 
       container.scrollTo({
           left: scrollAmount,
