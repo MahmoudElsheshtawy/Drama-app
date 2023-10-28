@@ -1,7 +1,7 @@
 .carousel {
     /* margin-bottom: 50px; */
 /* margin: 0; */
-background-color: blue;
+/* background-color: blue; */
  
 }
 .contentWrapper {
@@ -15,7 +15,7 @@ background-color: blue;
   
 }
 .arrow {
-    background-color: aqua;
+    /* background-color: aqua; */
     font-size: 30px;
     color: rgb(166, 165, 165);
     position: absolute;
@@ -48,27 +48,17 @@ background-color: blue;
     background-color: antiquewhite;
 } 
    
- /* .carouselItems  {
-        display: flex;
-        flex-direction: row;
-        /* gap: 10px; */
-        /* overflow-y: hidden;
-        overflow-x: hidden; */
-        /* margin-right: -20px; */
-        /* margin-left: -20px; */
-        /* padding: 0 20px; */
-        /* background-color: #000; */
-    /* } */ 
+
     .carouselItems  {
         display: flex;
         flex-direction: row;
-        /* gap: 10px; */
-        overflow: hidden;
-        overflow-x: hidden;
+        gap: 10px;
+       
+        overflow-y: hidden;
         margin-right: -20px;
         margin-left: -20px;
         padding:0;
-        background-color: #000;
+        /* background-color: #000; */
         margin: 0;
        
     }
@@ -86,7 +76,7 @@ cursor: pointer;
     align-items: flex-end;
     justify-content: space-between;
     padding: 0 10px;
-    background-color: rgb(16, 15, 15);
+    /* background-color: rgb(16, 15, 15); */
 }
 
 .img-poster {
@@ -114,7 +104,8 @@ cursor: pointer;
     flex-direction: column;
     margin-left: 12px;
     margin-bottom: 10px;
-    background-color: aqua;
+    margin-top: 10px;
+    /* background-color: aqua; */
     width: fit-content;
 
 }
@@ -123,7 +114,7 @@ cursor: pointer;
     opacity: 0.5;
     color: aliceblue;
     margin: 12px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 /* .arorr{
     position: relative;
@@ -133,12 +124,12 @@ cursor: pointer;
         display: flex;
         flex-direction: row;
         /* gap: 10px; */
-        overflow: hidden;
-        overflow-x: hidden;
+        /* overflow: hidden; */
+        /* overflow-x: hidden; */
         margin-right: -20px;
         margin-left: -20px;
         padding:0;
-        background-color: #000;
+        /* background-color: #000; */
         margin: 0;
        
     }
@@ -146,11 +137,6 @@ cursor: pointer;
 @media screen and (max-width:400px) {
    
     .carousel {
-        /* margin-bottom: 50px; */
-   /* /* overflow-x: hidden; */
-
-
-    background-color: rgb(0, 255, 51);
-     
+    /* background-color: rgb(0, 255, 51); */
     }
 }
