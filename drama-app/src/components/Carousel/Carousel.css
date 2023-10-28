@@ -1,5 +1,7 @@
 .carousel {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+/* margin: 0; */
+background-color: blue;
  
 }
 .contentWrapper {
@@ -10,10 +12,10 @@
     color: white;
     margin-bottom: 20px;
     font-weight: normal;
-    /* position: absolute; */
+  
 }
 .arrow {
-    /* background-color: aqua; */
+    background-color: aqua;
     font-size: 30px;
     color: rgb(166, 165, 165);
     position: absolute;
@@ -43,21 +45,37 @@
 .date {
     width: 75%;
     height: 20px;
+    background-color: antiquewhite;
 } 
    
- .carouselItems  {
+ /* .carouselItems  {
         display: flex;
         flex-direction: row;
-        gap: 10px;
-        overflow-y: hidden;
+        /* gap: 10px; */
+        /* overflow-y: hidden;
+        overflow-x: hidden; */
+        /* margin-right: -20px; */
+        /* margin-left: -20px; */
+        /* padding: 0 20px; */
+        /* background-color: #000; */
+    /* } */ 
+    .carouselItems  {
+        display: flex;
+        flex-direction: row;
+        /* gap: 10px; */
+        overflow: hidden;
+        overflow-x: hidden;
         margin-right: -20px;
         margin-left: -20px;
-        padding: 0 20px;
-        /* background-color: #000; */
+        padding:0;
+        background-color: #000;
+        margin: 0;
+       
     }
 .carouselItem {
 width: 15px;
 cursor: pointer;
+
 }
 .posterBlock {
     position: relative;
@@ -67,8 +85,8 @@ cursor: pointer;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 10px;
-    /* background-color: rgb(16, 15, 15); */
+    padding: 0 10px;
+    background-color: rgb(16, 15, 15);
 }
 
 .img-poster {
@@ -79,6 +97,7 @@ cursor: pointer;
     background-position: center;
     border-radius: 10px;
     margin-top: 20px;
+    overflow: hidden;
 }
 .circleRating {
     width: 40px;
@@ -88,20 +107,50 @@ cursor: pointer;
     background-color: white;
     flex-shrink: 0;
 }
-.genres {
-    display: none;
-    position: relative; 
-}
+
 .textBlock {
     color: white;
     display: flex;
     flex-direction: column;
     margin-left: 12px;
     margin-bottom: 10px;
+    background-color: aqua;
+    width: fit-content;
+
 }
 .date-m {
     font-size: 14px;
     opacity: 0.5;
     color: aliceblue;
     margin: 12px;
+    background-color: aqua;
+}
+/* .arorr{
+    position: relative;
+} */
+@media screen and (max-width:900px) {
+    .carouselItems  {
+        display: flex;
+        flex-direction: row;
+        /* gap: 10px; */
+        overflow: hidden;
+        overflow-x: hidden;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding:0;
+        background-color: #000;
+        margin: 0;
+       
+    }
+}
+@media screen and (max-width:400px) {
+   
+    .carousel {
+        /* margin-bottom: 50px; */
+   /* /* overflow-x: hidden; */
+
+
+    background-color: rgb(0, 255, 51);
+     
+    }
 }

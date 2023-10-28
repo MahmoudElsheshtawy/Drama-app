@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { fetchDataFromApi } from "../utils/api";
 const UseFeching = (url) => {
@@ -15,6 +16,7 @@ const UseFeching = (url) => {
                 setLoading(false);
                 setData(res);
             })
+            
             .catch((err) => {
                 setLoading(false);
                 setError("Something went wrong!");

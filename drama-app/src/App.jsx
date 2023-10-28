@@ -23,13 +23,13 @@ function App() {
  const testingapi =()=>{
   fetchDataFromApi("/configuration").then(
     (res)=>{
-      // console.log(res);
+      console.log(res);
       const url = {
         backdrop: res.images.secure_base_url + "original",
         poster: res.images.secure_base_url + "original",
         profile: res.images.secure_base_url + "original",
     };
-    // console.log(url)
+    console.log(url)
       dispatch(getApiConfiguration(url))
     }
   )
@@ -47,7 +47,7 @@ function App() {
                 <Route path="/explore/:mediaType" element={<Explore />} />
                 <Route path="*" element={<Err />} />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </BrowserRouter>
     </>
   )

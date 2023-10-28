@@ -1,8 +1,18 @@
 .switchingTabs {
     height: 30px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 2px;
+    margin-right: 60px;
+
+}
+.container{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
 }
     .tabItems {
         display: flex;
@@ -36,44 +46,8 @@
             left: 0;
             transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
         }
-        @media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
 
-            .switchingTabs {
-               height: 20px;
-               background-color: white;
-               border-radius: 20px;
-               padding: 2px;
-}
-    .tabItems {
-        display: flex;
-        align-items: center;
-        height: 21px;
-        position: relative;
-    }
-        .tabItem {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width:80px;
-            color: var(--black);
-            font-size: 14px;
-            position: relative;
-            z-index: 1;
-            cursor: pointer;
-            transition: color ease 0.3s;
-        }
-        .tabItem.active {
-                color: white;
-            }
-        
-        .movingBg {
-            height: 22px;
-            width: 60px;
-            border-radius: 15px;
-            background-image: var(--gradient);
-            position: absolute;
-            left: 0;
-            transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
-        }
+ 
+
         }

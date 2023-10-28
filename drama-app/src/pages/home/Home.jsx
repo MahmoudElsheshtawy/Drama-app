@@ -8,7 +8,7 @@ const Home = () => {
     <div>
 
       <HeroBanner/>
-      {/* <Trending/> */}
+      <Trending/>
       {/* <Popular/> */}
       {/* <TopRated/> */}
     </div>

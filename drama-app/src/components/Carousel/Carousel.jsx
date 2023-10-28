@@ -25,8 +25,8 @@ const Carousel = ({data,loading,endpoint,title }) => {
 
       const scrollAmount =
           dir === "left"
-              ? container.scrollLeft - (container.offsetWidth + 20)
-              : container.scrollLeft + (container.offsetWidth + 20);
+              ? container.scrollLeft - (container.offsetWidth + 10)
+              : container.scrollLeft + (container.offsetWidth + 10);
 
       container.scrollTo({
           left: scrollAmount,
@@ -48,8 +48,9 @@ const Carousel = ({data,loading,endpoint,title }) => {
     <div className="carousel">
       
       <ContentWrapper>
-      {title  && <div className="carouselTitle" style={{position:'absolute',top:'-30px'}}>{title }</div>}
-                <BsFillArrowLeftCircleFill
+      {title  && <div className="carouselTitle" style={{position:"absolute",top:'-30px'}}>{title }</div>}
+           
+            <BsFillArrowLeftCircleFill
                     className="carouselLeftNav arrow"
                     onClick={() => navigation("left")}
                 />
@@ -57,6 +58,7 @@ const Carousel = ({data,loading,endpoint,title }) => {
                     className="carouselRighttNav arrow"
                     onClick={() => navigation("right")}
                 />
+           
 
                 {!loading ?
                 (<div className="carouselItems" ref={carouselContainer}>
