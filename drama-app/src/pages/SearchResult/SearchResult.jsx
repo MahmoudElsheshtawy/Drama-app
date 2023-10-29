@@ -52,7 +52,7 @@ useEffect(()=>{
             {data?.results?.length > 0 ? (
                 <>
                   <div className="contanier">
-                  <div className="pageTitle">
+                  <div className="pageTitle" style={{fontSize:"20px"}}>
                         {`Search ${
                             data?.total_results > 1
                                 ? "results"
@@ -80,7 +80,7 @@ useEffect(()=>{
                   </div>
                 </>
             ) : (
-                <span className="resultNotFound">
+                <span className="resultNotFound" style={{marginTop:"100px",fontSize:'20px'}}>
                     Sorry, Results not found!
                 </span>
             )}

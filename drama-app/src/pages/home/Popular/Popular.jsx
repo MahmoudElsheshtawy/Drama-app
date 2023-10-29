@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 import Carousel from "../../../components/Carousel/Carousel";
-import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
+import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper";
 import SwitchTabs from "../../../components/SwitchTabs/SwitchTabs";
 
 import UseFeching from "../../../hooks/UseFeching";
