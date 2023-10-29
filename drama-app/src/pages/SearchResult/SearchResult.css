@@ -1,8 +1,8 @@
 .searchResultsPage {
-    /* min-height: 700px; */
-    /* padding-top: 100px; */
+    min-height: 700px;
+    padding-top: 100px;
     /* background-color: rgb(225, 145, 39); */
-    /* display: flex; */
+    display: flex;
     /* flex-direction: column; */
     /* display: grid;
     grid-template-columns: repeat(auto-fit ,minmax(23rem, 1fr));

@@ -1,41 +1,30 @@
 
 .movieCard {
-    /* width: calc(50% - 5px); */
-    /* margin-bottom: 25px; */
     cursor: pointer;
     flex-shrink: 0;
-    /* width: 200px; */
     margin: auto;
     width: 245px;
     display: grid;
     grid-template-columns: repeat(auto-fit ,minmax(12rem, 1fr));
-    /* background-color: chartreuse; */
 }
  .movieCard .posterBlock {
     width: 100%;
     transition: all ease 0.5s;
-    /* background-color: aqua; */
 }
 
 .movieCard img {
     width: 220px;
-    /* width: 100%; */
     height: 330px;
-    /* height: 100%; */
-    /* margin-bottom: 0px; */
     object-fit: cover;
     margin-bottom: -10px;
     object-position: center
 }
-
     .movieCard .circleRating {
     width: 40px;
     height: 40px;
     position: relative;
     top: 30px;
-    /* background-color: rgb(142, 28, 28); */
     display: flex;
-
     flex-shrink: 0;
 }
 
@@ -55,6 +44,8 @@
     font-size: 15px;
     opacity: 0.5;
     margin-top: 20px;
+    background-color: transparent;
+    margin-top: 30px;
 
 }
     
