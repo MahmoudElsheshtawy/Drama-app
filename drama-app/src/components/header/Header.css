@@ -21,6 +21,11 @@
 .hide {
     transform: translateY(-60px);
 }
+/* .top-input{
+    outline: none;
+    background-color: aqua;
+    border-radius: none;
+} */
 .contentWrapper {
     display: flex;
     align-items: center;
@@ -80,6 +85,8 @@ svg {
     height: 40px;
     margin-top: 10px;
     width: 100%; 
+   
+    background-color: aqua;
 }
 svg {
     font-size: 20px;
