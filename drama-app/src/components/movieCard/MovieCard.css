@@ -18,6 +18,8 @@
     object-fit: cover;
     margin-bottom: -10px;
     object-position: center
+    ;
+    
 }
     .movieCard .circleRating {
     width: 40px;
@@ -49,5 +51,5 @@
     
 img:hover {
             opacity: 0.5;
-       
+            transition: .4s all;
     }

@@ -7,11 +7,16 @@
     font-size: 24px;
     color: var(--black-light);
 }
+.continer{
+    display: flex;flex-direction: column;
+}
 .pageHeader {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 25px;
-    flex-direction: row;
+    transition: .3s;
+ 
 }
 .pageTitle {
     font-size: 24px;
@@ -21,12 +26,13 @@
 }
 .filters {
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
     flex-direction: column;
 } 
-  
 .react-select-container {
  width: 300px;
+ position: relative;
 &.genresDD {
     width: 100%;
     width: 300px;
@@ -35,6 +41,7 @@
 .sortbyDD {
     width: 100%;
     flex-shrink: 0;
+    color: aliceblue;
 }
 .react-select__control {
     border: 0;
@@ -42,6 +49,7 @@
     box-shadow: none;
     background-color: var(--black-light);
     border-radius: 20px;
+    color: aliceblue;
 }
 .react-select__value-container ,
     .react-select__placeholder,
@@ -52,6 +60,7 @@
 }
 .react-select__single-value {
     color: white;
+  
 }
 .react-select__multi-value {
     background-color: var(--black3);
@@ -78,10 +87,12 @@
     flex-flow: row wrap;
     gap: 10px;
     margin-bottom: 50px;
+   
 }
 
 .movieCard .posterBlock {
     margin-bottom: 30px;
+    
 }
 
 @media screen and (max-width:500px) {

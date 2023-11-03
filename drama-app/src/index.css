@@ -23,7 +23,7 @@
 
 body {
   background-color: var(--black);
-  height: 4000px;
+  /* height: 4000px; */
 }
 
 ::-webkit-scrollbar {

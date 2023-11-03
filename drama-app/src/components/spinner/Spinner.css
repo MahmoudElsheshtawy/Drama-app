@@ -5,10 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: aqua; */
+    /* color: rgb(36, 140, 232); */
 }
     .spinner {
         animation: rotate 2s linear infinite;
-        z-index: 2;
+        z-index: 200000000000000000;
         width: 50px;
         height: 50px;
     }

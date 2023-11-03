@@ -22,7 +22,7 @@ const HeroBanner = () => {
         const bg =
 
             url.backdrop +
-            data?.results?.[Math.floor(Math.random() * 20 )]?.backdrop_path;
+            data?.results?.[Math.floor(Math.random() * 20 )]?.backdrop_path
         setBackground(bg);
     }, [data]);
   
@@ -43,6 +43,7 @@ const handleClick =()=>{
                 <div className="backdrop-img">
                     <Img src={background} />
                 </div>
+                
             )}
 
             <div className="opacity-layer"></div>

@@ -128,6 +128,7 @@ const Explore = () => {
                             placeholder="Sort by"
                             className="react-select-container sortbyDD"
                             classNamePrefix="react-select"
+                            styles={{color:'fff'}}
                         />
                     </div>
                 </div>
