@@ -1,8 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { useEffect } from 'react'
 import {fetchDataFromApi} from './utils/api'
 import { useSelector, useDispatch } from "react-redux";
-import { getApiConfiguration, getGenrea } from "./store/homeSlice";
+import { getApiConfiguration } from "./Store/Homeslice";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
@@ -12,6 +13,7 @@ import Explore from "./pages/explore/Explore";
 import Err from "./pages/err/Err";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
+
   const dispatch = useDispatch();
   const {url}  = useSelector((state) => state.Home);
   // console.log(url)
@@ -30,10 +32,11 @@ function App() {
         profile: res.images.secure_base_url + "original",
     };
     console.log(url)
-      dispatch(getApiConfiguration(url))
+      dispatch(getApiConfiguration(url));
     }
   )
  }
+
 
   return (
     <>

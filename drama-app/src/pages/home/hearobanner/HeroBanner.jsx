@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
-import{ useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./HeroBanner.css";
@@ -9,20 +10,22 @@ import UseFeching from "../../../hooks/UseFeching";
 import Img from "../../../components/lazyLoadeimg/Img";
 import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper";
 const HeroBanner = () => {
+
     const [background, setBackground] = useState("");
     const [query, setQuery] = useState("");
     const navigate = useNavigate();
     const { url } = useSelector((state) => state.Home);
     const { data, loading } = UseFeching("/movie/upcoming");
-    //   console.log(background)
+      console.log(background)
        
     useEffect(() => {
         const bg =
 
             url.backdrop +
-            data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
+            data?.results?.[Math.floor(Math.random() * 20 )]?.backdrop_path;
         setBackground(bg);
     }, [data]);
+  
 
     const searchQueryHandler = (event) => {
         if (event.key === "Enter" && query.length > 0) {

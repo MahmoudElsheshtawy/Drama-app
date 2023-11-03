@@ -38,9 +38,7 @@
     line-height: 17px;
     margin: -5px;
 }
-
-
-    .movieCard .date {
+.movieCard .date {
     font-size: 15px;
     opacity: 0.5;
     margin-top: 20px;
