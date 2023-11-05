@@ -19,14 +19,16 @@ const HeroBanner = () => {
     const { url } = useSelector((state) => state.Home);
 
 
-
+    console.log(url.backdrop)
     const { data, loading } = UseFeching("/movie/upcoming");
-      console.log(background)
-    const bg=url.backdrop +data?.results?.[Math.floor(Math.random() * 20 )]?.backdrop_path
+      console.log(data)
+   
     useEffect(() => {
+        const bg= url.backdrop +data?.results?.[Math.floor(Math.random() * 20 )]?.backdrop_path;
        setBackground(bg);
+       console.log(bg)
     }, [data]);
-  
+    console.log(url.backdrop)
 
 const searchQueryHandler = (event) => {
     if (event.key === "Enter" && query.length > 0) {
