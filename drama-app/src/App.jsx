@@ -15,7 +15,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const dispatch = useDispatch();
   const {url}  = useSelector((state) => state.Home);
-  // console.log(url)
  useEffect(()=>{
   testingapi();
  },[])
@@ -30,7 +29,6 @@ function App() {
     };
    
       dispatch(getApiConfiguration(url));
-      console.log(url.profile+"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
     }
   )
  }
