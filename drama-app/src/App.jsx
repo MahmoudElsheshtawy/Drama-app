@@ -30,7 +30,7 @@ function App() {
     };
    
       dispatch(getApiConfiguration(url));
-      console.log(url.profile)
+      console.log(url.profile+"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
     }
   )
  }

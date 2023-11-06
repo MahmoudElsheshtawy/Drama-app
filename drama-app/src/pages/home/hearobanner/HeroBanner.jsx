@@ -20,14 +20,16 @@ const HeroBanner = () => {
 
 
     console.log(url.backdrop)
-    const { data, loading } = UseFeching("/movie/upcoming");
+    const { data, loadingg } = UseFeching("/movie/upcoming");
       console.log(data)
    
     useEffect(() => {
-        const bg= url.backdrop +data?.results?.[Math.floor(Math.random() * 20 )]?.backdrop_path;
+        const bg = 
+        url.backdrop +
+        data?.results?.[Math.floor(Math.random() * 20 )]?.backdrop_path;
        setBackground(bg);
        console.log(bg)
-    }, [data]);
+    }, [url]);
     console.log(url.backdrop)
 
 const searchQueryHandler = (event) => {
@@ -45,16 +47,19 @@ const handleClick =()=>{
 
     
         <div className="heroBanner">
-                  {!loading && (
+                  {!loadingg && (
             <div className="backdrop-img">
                 <Img src={background} />
             </div> 
         )};
+        {/* <Img src={background} /> */}
            
-
 <div className="opacity-layer"></div>
             <ContentWrapper>
       
+            {/* <div className="backdrop-img">
+                <Img src={background} />
+            </div>  */}
                 <div className="heroBannerContent">
                     <span className="title">Welcome.</span>
                     <span className="subTitle">
