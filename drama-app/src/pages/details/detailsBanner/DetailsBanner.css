@@ -1,6 +1,7 @@
 
 .detailsBanner {
-    width: 100%;
+    width: 93%;
+    margin: auto;
     background-color: var(--black);
     padding-top: 100px;
     margin-bottom: 50px;
@@ -64,6 +65,7 @@
     display: block;
     border-radius: 12px;
     background-color: black;
+ 
 }
 
 .right {
@@ -74,6 +76,7 @@ color: rgb(255, 255, 255);
     font-size: 28px;
     line-height: 40px;
     margin-top: 10px;
+ 
 }
 .subtitle {
     font-size: 16px;
@@ -208,9 +211,9 @@ width: 41px;
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 40px;
-        margin-top: 80px;
+        margin-top: 130px;
         font-style: italic;
         opacity: 0.5;
     }
-  
+
 }

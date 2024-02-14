@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { fetchDataFromApi } from "../utils/api";
 const UseFeching = (url) => {
+    //print console url 
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(null);
     const [error, setError] = useState(null);

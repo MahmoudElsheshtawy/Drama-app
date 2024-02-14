@@ -1,5 +1,6 @@
 .carousel {
     margin-bottom: 50px;
+ /* overflow: hidden; */
 
 }
 .contentWrapper {
@@ -58,6 +59,7 @@
     margin-left: -20px;
     padding:0;
     margin: 0;
+    
        
 }
 .carouselItem {

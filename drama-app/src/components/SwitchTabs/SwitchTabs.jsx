@@ -7,13 +7,14 @@ const SwitchTabs = ({ data, onTabChange }) => {
     const [left, setLeft] = useState(0);
 
     const activeTab = (tab, index) => {
-        setLeft(index * 100);
+     
+        setLeft(index * 101);
         setTimeout(() => {
             setSelectedTab(index);
-        }, 300);
+        }, 200);
         onTabChange(tab, index);
     };
-
+    
     return (
         <div className="switchingTabs">
             <div className="tabItems">

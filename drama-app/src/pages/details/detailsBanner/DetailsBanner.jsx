@@ -38,12 +38,12 @@ const DetailsBanner = ({ video, crew }) => {
             {!loading ? (
                 <>
                     {!!data && (
-                        <React.Fragment>
+                        <React.Fragment >
                             <div className="backdrop-img">
                                 <Img src={url.backdrop + data.backdrop_path} />
                             </div>
                             <div className="opacity-layer"></div>
-                            <ContentWrapper>
+                            {/* <ContentWrapper> */}
                                
                                 <div className="contenttt">
                                     <div className="left">
@@ -98,10 +98,10 @@ const DetailsBanner = ({ video, crew }) => {
 
                                         <div className="overview">
                                             <div className="heading">
-                                                Overview
+                                                Overview 
                                             </div>
                                             <div className="description">
-                                                {data.overview}
+                                                {data.overview}  
                                             </div>
                                         </div>
 
@@ -208,7 +208,7 @@ const DetailsBanner = ({ video, crew }) => {
                                     setVideoId={setVideoId}
                                 /> 
                               
-                            </ContentWrapper>
+                            {/* </ContentWrapper> */}
                         </React.Fragment>
                     )}
                 </>

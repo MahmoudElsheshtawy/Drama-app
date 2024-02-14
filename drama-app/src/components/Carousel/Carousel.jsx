@@ -3,7 +3,7 @@
 
 import { useRef } from "react";
 import { BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill,} from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";//send id
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
 import './Carousel.css'

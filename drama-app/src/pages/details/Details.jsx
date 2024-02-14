@@ -9,6 +9,7 @@ import Recommendation from './carousel/Recommendation';
 const Details = () => {
   const { mediaType, id } = useParams();
   const { data, loading } = UseFeching(`/${mediaType}/${id}/videos`);
+  
   const { data: credits, loading: creditsLoading } = UseFeching(`/${mediaType}/${id}/credits`)
   return (
     <div>
