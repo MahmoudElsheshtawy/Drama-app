@@ -107,15 +107,18 @@ const Header = () => {
                     <ContentWrapper>
                         <div className="searchInput">
                             <input
+
+                            // style={{color:"#000"}}
                             className='top-input'
                                 type="text"
                                 placeholder="Search for a movie or tv show...."
                                 onChange={(e) => setQuery(e.target.value)}
                                 onKeyUp={searchQueryHandler}
+                               
                             />
                             <VscChromeClose
                                 onClick={() => setShowSearch(false)}
-                                style={{color:'#000'}}
+                                style={{color:'#fff'}}
                             />
                         </div>
                     </ContentWrapper>

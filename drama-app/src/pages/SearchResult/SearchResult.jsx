@@ -80,9 +80,9 @@ useEffect(()=>{
                   </div>
                 </>
             ) : (
-                <span className="resultNotFound" style={{marginTop:"100px",fontSize:'20px'}}>
+                <div className="resultNotFound"style={{width:"100%"}} >
                     Sorry, Results not found!
-                </span>
+                </div>
             )}
         </ContentWrapper>
     )}

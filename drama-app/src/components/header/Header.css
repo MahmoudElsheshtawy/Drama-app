@@ -71,10 +71,11 @@ svg {
     font-size: 18px;
     color: white;
 }
+/* eeeeeeeeeeeeeeeeeeeeeee */
 .searchBar {
     width: 100%;
     height: 60px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(55, 60, 116);
     position: absolute;
     top: 60px;
     animation: mobileMenu 0.3s ease forwards;
@@ -86,19 +87,33 @@ svg {
     margin-top: 10px;
     width: 100%; 
    border: none;
+   /* background-color: blue; */
+    /* border-bottom:1px #aaa solid ; */
 }
 .top-input{
     width: 100%;
     height: 30px;
     border: none;
-    border-bottom:1px #aaa solid ;
+    border-radius: 5px;
+    /* border-bottom:1px #5c5c5c solid ; */
     outline: none;
+    color: rgb(231, 228, 228);
+    font-weight:400;
+    font-size: 14px;
+    background-color: rgb(24, 24, 67);
+    padding-left: 10px;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    
+   
 }
+
 svg {
     font-size: 20px;
     flex-shrink: 0;
     margin-left: 10px;
     cursor: pointer;
+   
 }
 @keyframes mobileMenu {
     0% {
