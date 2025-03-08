@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 
-
 import "./Spinner.css";
 
 const Spinner = ({ initial }) => {
-    return (
-        <div className={`loadingSpinner ${initial ? "initial" : ""}`}>
-            {/* <svg className="spinner" viewBox="0 0 50 50">
+  return (
+    <div className={`loadingSpinner ${initial ? "initial" : ""}`}>
+      {/* <svg className="spinner" viewBox="0 0 50 50">
                 <circle
                     className="path"
                     cx="25"
@@ -17,17 +16,16 @@ const Spinner = ({ initial }) => {
                 ></circle>
             </svg> */}
 
-<div className="spinner" >
-<div className="load-row">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-   
-</div>
+      <div className="spinner">
+        <div className="load-row">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Spinner;

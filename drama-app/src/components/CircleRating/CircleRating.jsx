@@ -3,6 +3,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 import "./CircleRating.css";
 
+// eslint-disable-next-line react/prop-types
 const CircleRating = ({ rating }) => {
     return (
         <div className="circleRating">
