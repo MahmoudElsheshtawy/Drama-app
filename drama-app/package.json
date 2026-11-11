@@ -1,7 +1,8 @@
+
 {
   "name": "drama-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +14,6 @@
     "@reduxjs/toolkit": "^1.9.7",
     "axios": "^1.5.1",
     "dayjs": "^1.11.7",
-    "drama-app": "file:",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
@@ -36,6 +36,6 @@
     "vite": "^8.3.8"
   },
   "engines": {
-  "node": ">=26.0.0"
-}
+    "node": "26.x"
+  }
 }
